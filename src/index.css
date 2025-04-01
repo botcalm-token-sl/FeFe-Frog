@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "WinterMinieRegular";
+  src: url("./assets/fonts/Winter-Minie-Regular.otf") format("opentype"); /* Encode space as %20 */
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "BubblegumSansRegular";
+  src: url("./assets/fonts/BubblegumSans-Regular.ttf") format("truetype"); /* Encode space as %20 */
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Add margin-top to pagination */
+.custom-swiper .swiper-pagination {
+  margin-top: 20px; /* Adjust this value as needed */
+  position: relative !important; /* Ensure it moves down */
+}
+
+/* Make pagination bullets white */
+.custom-swiper .swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1;
+}
+
+/* Active bullet */
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: white !important;
+  transform: scale(1.2);
+}
